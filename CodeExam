@@ -40,20 +40,6 @@ namespace Массивы
 
             Console.WriteLine("\nOdd Array Elements Summary = " + arrayElementsSum);
 
-            //Минимальный элемент массива
-
-            int minElement = array[0];
-
-            for (int i = 1; i < ArraySize; i++)
-            {
-                if (array[i] < minElement)
-                {
-                    minElement = array[i];
-                }
-            }
-
-            Console.WriteLine("\nMinimal Array Element = " + minElement);
-
             //Вывод массива в обратном порядке
 
             Console.WriteLine("\nReversed array:\n");
@@ -67,3 +53,11 @@ namespace Массивы
         }
     }
 }
+
+
+
+
+ФОРТНАТЕ ОР ПАБЕДЖЕ
+ПАБЕДЖЕ
+
+
