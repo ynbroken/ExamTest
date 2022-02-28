@@ -1,0 +1,69 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Массивы
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter array size: ");
+
+            int ArraySize = int.Parse(Console.ReadLine());
+
+            int arrayElementsSum = 0;
+
+            int[] array = new int[ArraySize];
+
+            //Ввод массива
+
+            Console.WriteLine("\nEnter your array:\n");
+
+            for (int i = 0; i < ArraySize; i++)
+            {
+                Console.Write("Array [" + i + "] = ");
+                array[i] = int.Parse(Console.ReadLine());
+            }
+
+            //Сумма четных элементов массива
+
+            for (int i = 0; i < ArraySize; i++)
+            {
+                if (array[i] % 2 == 0)
+                {
+                    arrayElementsSum += array[i];
+                }
+            }
+
+            Console.WriteLine("\nOdd Array Elements Summary = " + arrayElementsSum);
+
+            //Минимальный элемент массива
+
+            int minElement = array[0];
+
+            for (int i = 1; i < ArraySize; i++)
+            {
+                if (array[i] < minElement)
+                {
+                    minElement = array[i];
+                }
+            }
+
+            Console.WriteLine("\nMinimal Array Element = " + minElement);
+
+            //Вывод массива в обратном порядке
+
+            Console.WriteLine("\nReversed array:\n");
+
+            for (int i = ArraySize - 1; i >= 0; i--)
+            {
+                Console.WriteLine("Array [" + i + "] = " + array[i]);
+            }
+
+            Console.ReadLine();
+        }
+    }
+}
